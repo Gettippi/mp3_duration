@@ -5,6 +5,7 @@ from mutagen.mp4 import MP4
 
 app = Flask(__name__)
 
+
 @app.route('/mp3-duration', methods=['POST'])
 def mp3_duration():
     if 'file' not in request.files:
